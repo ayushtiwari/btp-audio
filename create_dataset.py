@@ -45,7 +45,7 @@ with open(features_savepath, 'wb') as f:
     pickle.dump(features_arr, f)
 
 with open(labels_savepath, 'wb') as f:
-    pickle.dump(labels_savepath, f)
+    pickle.dump(labels_arr, f)
 
 print(features_arr.shape)
 print(labels_arr.shape)
