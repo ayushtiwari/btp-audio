@@ -2,7 +2,7 @@ import glob
 import os
 import json
 
-paths = glob.glob('/home/btp-souvic/HULK/ayushtiwari/output/*')
+paths = glob.glob('/home/btp-souvic/HULK/ayushtiwari/output_india_upfront/*')
 
 for path in paths:
     print('Processing {}'.format(path))
@@ -35,9 +35,9 @@ for path in paths:
         new_intervals = []
         duration = 0.0
         for interval in old_intervals:
-            if interval[1] - interval[0] >= 5.0:
-                new_intervals.append(interval)
-                duration += interval[1] - interval[0]
+            # if interval[1] - interval[0] >= 5.0:
+            new_intervals.append(interval)
+            duration += interval[1] - interval[0]
 
         mapping[speaker] = {'duration': duration, 'intervals': new_intervals}
 
