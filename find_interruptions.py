@@ -2,7 +2,7 @@ import glob
 import os
 import json
 
-paths = glob.glob('/home/btp-souvic/HULK/ayushtiwari/output_india_upfront/*')
+paths = glob.glob('/home/btp-souvic/HULK/ayushtiwari/output_republic_debates/*')
 
 for path in paths:
     print('Processing {}'.format(path))
