@@ -4,8 +4,8 @@ import json
 
 import torch
 
-audio_dir = '/home/btp-souvic/HULK/ayushtiwari/big_fight'
-output_dir = '/home/btp-souvic/HULK/ayushtiwari/output_big_fight'
+audio_dir = '/home/btp-souvic/HULK/ayushtiwari/urban_debates'
+output_dir = '/home/btp-souvic/HULK/ayushtiwari/btp-audio/output_urban_debates'
 
 pipeline = torch.hub.load('pyannote/pyannote-audio', 'dia')
 
